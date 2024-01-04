@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-const App = () => {
+const Counter = () => {
   // useState hook to manage the count state
   const [count, setCount] = useState(0);
 
@@ -29,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Counter;

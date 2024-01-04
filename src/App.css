@@ -1,44 +1,24 @@
-/* Calculator.css */
+.counter {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
 
-.calculator {
-  width: 300px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.count {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.display {
-  width: calc(100% - 40px);
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
-.buttons button {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
+button {
+  padding: 10px 20px;
   font-size: 18px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  background-color: #f8f8f8;
+  margin: 0 10px;
   cursor: pointer;
 }
 
-.buttons button:hover {
-  background-color: #eaeaea;
+span {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 10px;
 }
