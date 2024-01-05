@@ -11,6 +11,7 @@
 }
 
 button {
+  background-color: #21c421;
   padding: 10px 20px;
   font-size: 18px;
   margin: 0 10px;
@@ -18,7 +19,7 @@ button {
 }
 
 span {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   margin: 0 10px;
 }
