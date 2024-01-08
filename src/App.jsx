@@ -1,8 +1,7 @@
-import React from 'react'
-import './App.css';
-import TodoList from './Component/TodoList'
+// import './App.css';
+import Calculator from './Component/Calculator';
 export default function App() {
   return (
-    <TodoList/>
+    <Calculator/>
   )
 }

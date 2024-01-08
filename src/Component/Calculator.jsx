@@ -5,27 +5,27 @@ const Calculator = () => {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
 
-  const handleButtonClick = (value) => {
-    if (value === '=') {
+    const handleButtonClick = (val) => {
+    if (val === '=') {
       try {
-        setResult(eval(input));
+        setResult(eval(input))
       } catch (error) {
-        setResult('Error');
+        setResult('Error')
       }
-    } else if (value === 'C') {
+    } else if (val === 'C') {
       setResult('');
       setInput('');
     } else {
-      setInput(input + value);
+      setInput(input + val)
     }
-  };
-
+  }
+  
   return (
     <div className="calculator">
       <input type="text" className="input" value={input} disabled />
       <input type="text" className="result" value={result} disabled />
       <div className="buttons">
-        <button onClick={() => handleButtonClick('7')}>7</button>
+        <button className="button" onClick={() => handleButtonClick('7')}>7</button>
         <button onClick={() => handleButtonClick('8')}>8</button>
         <button onClick={() => handleButtonClick('9')}>9</button>
         <button onClick={() => handleButtonClick('/')}>/</button>
