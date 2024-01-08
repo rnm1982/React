@@ -1,12 +1,27 @@
 // server.js
-const express = require('express');
-const mongoose = require('mongoose');
+const express = require("express");
+const mongoose = require("mongoose");
 const app = express();
 
-mongoose.connect('mongodb+srv://ravindra4mahajan:Reyansh2022@cluster0.9uhopns.mongodb.net/', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose
+  .connect(
+    "mongodb+srv://ravindra4mahajan:Ravindra2025@cluster0.9uhopns.mongodb.net/",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((err) => {
+    console.error("Error:", err);
+  })
+  .finally(() => {
+    // Close the Mongoose connection when done
+    mongoose.disconnect();
+    console.log("Disconnected from MongoDB");
+  });
 
 // Define MongoDB schema and models using mongoose
 
